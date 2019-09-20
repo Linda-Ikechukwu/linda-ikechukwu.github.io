@@ -1,0 +1,78 @@
+
+//HEADINGS
+%heading{
+    font-family: $secondary-font;
+    font-weight: 4;
+    text-transform: capitalize;
+}
+.heading-1{
+    @extend %heading;
+    font-size: 4.5rem;
+    color: $grey-color-light1;
+    line-height:1 ;
+
+    @media only screen and (max-width:$bp-laptopS) {
+        font-size: 3.5rem;
+    }
+
+}
+
+.heading-2{
+    @extend %heading;
+    font-size: 4rem;
+    line-height:1 ; 
+    font-style: italic;
+
+    @media only screen and (max-width:$bp-phone) {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    &--light{
+        color:$grey-color-light1
+    }
+    &--dark{
+        color:$grey-color-dark1
+    }
+}
+
+.heading-3{
+    @extend %heading;
+    font-size: 2rem;
+    color: $primary-color;
+    text-transform: uppercase;
+
+    @media only screen and (max-width:$bp-phone) {
+        font-size: 1.8rem;
+    }
+    
+}
+.heading-4{
+    @extend %heading; 
+    font-size: 1.7rem;
+
+    &--light{
+        color:$grey-color-light1;
+    }
+    &--dark{
+        color:$grey-color-dark1;
+        font-weight: bold;
+    }
+}
+
+.btn{
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    transition: all .3s;
+    font-size: 1.2rem;
+
+    &:hover{
+        background-color: $primary-color-dark;
+    }
+}
